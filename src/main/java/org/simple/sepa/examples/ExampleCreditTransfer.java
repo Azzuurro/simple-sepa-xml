@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExampleCreditTransfer {
+
+    // PAIN 001.001.003
+
     public static void main(String[] args) {
         final SEPABankAccount sender = new SEPABankAccount(
                 "DE89370400440532013000",
@@ -25,7 +28,8 @@ public class ExampleCreditTransfer {
                             ),
                             2000.20d,
                             "Salary PP 2018-07",
-                            SEPATransaction.Currency.EUR
+                            SEPATransaction.Currency.EUR,
+                            "No Information"
                     )
             );
 
@@ -37,7 +41,8 @@ public class ExampleCreditTransfer {
                             ),
                             1000.00d,
                             "Salary CW 2015-12",
-                            SEPATransaction.Currency.EUR
+                            SEPATransaction.Currency.EUR,
+                            "No Information"
                     )
             );
 
@@ -49,7 +54,8 @@ public class ExampleCreditTransfer {
                             ),
                             5000.00d,
                             "Salary FB 2017-05",
-                            SEPATransaction.Currency.EUR
+                            SEPATransaction.Currency.EUR,
+                            "No Information"
                     )
             );
         }};
