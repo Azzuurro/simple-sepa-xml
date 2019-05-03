@@ -18,9 +18,10 @@ public class SEPATransaction {
 	private Date date;
 
 	private String mandatReference;
-	private Date mandatReferenceDate = new Date();
+	private Date mandatReferenceDate;
 
-	private Currency currency = Currency.EUR;
+	private Currency currency;
+	private String remittance;
 
 	public SEPATransaction(
 		SEPABankAccount bankAccount,
@@ -29,7 +30,8 @@ public class SEPATransaction {
 		Date date,
 		String mandatReference,
 		Date mandatReferenceDate,
-		Currency currency
+		Currency currency,
+        String remittance
 	) {
 		this.bankAccount = bankAccount;
 		this.subject = subject;
@@ -38,6 +40,7 @@ public class SEPATransaction {
 		this.mandatReference = mandatReference;
 		this.mandatReferenceDate = mandatReferenceDate;
 		this.currency = currency;
+		this.remittance = remittance;
 	}
 
 	public SEPATransaction(
@@ -46,17 +49,18 @@ public class SEPATransaction {
 			String subject,
 			Date date,
 			String mandatReference,
-			Date mandatReferenceDate
+			Date mandatReferenceDate,
+            String remittance
 	) {
-		this(bankAccount, value, subject, date, mandatReference, mandatReferenceDate, Currency.EUR);
+		this(bankAccount, value, subject, date, mandatReference, mandatReferenceDate, Currency.EUR, remittance);
 	}
 
-	public SEPATransaction(SEPABankAccount bankAccount, Double value, String subject) {
-		this(bankAccount, value, subject, new Date(), null, null, Currency.EUR);
+	public SEPATransaction(SEPABankAccount bankAccount, Double value, String subject, String remittance) {
+		this(bankAccount, value, subject, new Date(), null, null, Currency.EUR, remittance);
 	}
 
-	public SEPATransaction(SEPABankAccount bankAccount, Double value, String subject, Currency currency) {
-		this(bankAccount, value, subject, new Date(), null, null, currency);
+	public SEPATransaction(SEPABankAccount bankAccount, Double value, String subject, Currency currency, String remittance) {
+		this(bankAccount, value, subject, new Date(), null, null, currency, remittance);
 	}
 
 	public SEPABankAccount getBankAccount() {
@@ -86,4 +90,6 @@ public class SEPATransaction {
 	public Currency getCurrency() {
 		return currency;
 	}
+
+	public String getRemittance() { return remittance; }
 }
