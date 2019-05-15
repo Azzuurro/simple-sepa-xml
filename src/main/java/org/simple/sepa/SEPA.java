@@ -43,7 +43,7 @@ public abstract class SEPA {
 
         this.nodePmtInf = nodeCstmrDrctDbtInitn.append("PmtInf");
         this.nodePmtInf.append("PmtInfId").value("PMT-ID0-" + SEPAFormatDate.formatDate(executionDate));
-        this.nodePmtInf.append("PmtMtd").value("TRA");  // For PAIN 001 (Überweisung) there are three Payment Methods: CHK (Cheque), TRF (TransferAdvice), TRA (CreditTransfer)
+        this.nodePmtInf.append("PmtMtd").value("TRF");  // For PAIN 001 (Überweisung) there are three Payment Methods: CHK (Cheque), TRF (TransferAdvice), TRA (CreditTransfer)
         this.nodePmtInf.append("BtchBookg").value("true");
         this.nodePmtInf.append("NbOfTxs").value(this.transactions.size());
         this.nodePmtInf.append("CtrlSum").value(this.getTransactionVolume());
