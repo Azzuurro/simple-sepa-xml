@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAzzuurro%2Fsimple-sepa-xml.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAzzuurro%2Fsimple-sepa-xml?ref=badge_shield)
 
 # Simple Java SEPA XML Generator
 
@@ -454,3 +455,6 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAzzuurro%2Fsimple-sepa-xml.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAzzuurro%2Fsimple-sepa-xml?ref=badge_large)
